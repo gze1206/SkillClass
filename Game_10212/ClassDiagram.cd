@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="클래스를 전역변수처럼&#xD;&#xA;사용 가능하도록 바꿈">
+    <Position X="8.488" Y="0.5" Height="0.575" Width="1.7" />
+  </Comment>
+  <Comment CommentText="게임의 처리를 담당.&#xD;&#xA;Update, Render는&#xD;&#xA;이 곳에 추가">
+    <Position X="8.483" Y="1.758" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="렌더를 보조하는 클래스">
+    <Position X="2.367" Y="1.133" Height="0.291" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Texture를 렌더함">
+    <Position X="2.434" Y="2.542" Height="0.292" Width="1.525" />
+  </Comment>
+  <Comment CommentText="SpriteRenderer에서&#xD;&#xA;렌더하는 개체">
+    <Position X="0.5" Y="2.342" Height="0.475" Width="1.7" />
+  </Comment>
+  <Comment CommentText="유니티의 GameObject같은 느낌같다">
+    <Position X="6.125" Y="2.367" Height="0.291" Width="2.325" />
+  </Comment>
+  <Class Name="Object" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAoAAAAQAAAAAgAAABAAAACAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <AssociationLine Name="renderer" Type="SpriteRenderer">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.932" Y="0.552" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAwAgAAAACAAAAAAAAAAAAAEBAAAAAAAABAAAAAAgAA=</HashCode>
+      <FileName>Item.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="renderer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABQAAAAAAAAAAAEBAAAAAABAAEABYAAU=</HashCode>
+      <FileName>GameManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mAudioMngPtr" />
+      <Field Name="mItemPtr" />
+      <Field Name="mPlayerPtr" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="renderer" Type="SpriteRenderer">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.307" Y="0.818" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAAAAAAAACBAAAAEAAQAAABAAAQAAgBA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="renderer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpriteRenderer" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAA=</HashCode>
+      <FileName>SpriteRenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAACAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Singleton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Texture" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQAAAgABAAAAAAAAAAAAAAEAAAAIAIAAAAAA=</HashCode>
+      <FileName>Texture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renderer" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAABAAAABCABAAAAABCAABAAAAA=</HashCode>
+      <FileName>Renderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioManager" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAIAABAAAAAAAAAAAAAAAAAEACAAoAkAAASAAQA=</HashCode>
+      <FileName>AudioManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
